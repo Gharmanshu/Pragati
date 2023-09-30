@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0e6ff;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+        }
+
+        .decorative {
+            position: absolute;
+            color: #b366ff;
+            opacity: 0.6;
+            z-index: 0;
+        }
+
+        .decorative.top-left { top: 5%; left: 5%; font-size: 2em; }
+        .decorative.top-right { top: 5%; right: 5%; font-size: 2em; }
+        .decorative.bottom-left { bottom: 5%; left: 5%; font-size: 2em; }
+        .decorative.bottom-right { bottom: 5%; right: 5%; font-size: 2em; }
+
+        .main-content {
+            background-color: #e6ccff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(128, 0, 128, 0.1);
+            text-align: center;
+            width: 90%;
+        }
+
+        img.profile {
+            width: 60%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #9933ff;
+        }
+
+        h1 {
+            color: #800080;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #9933ff;
+        }
+
+        /* Responsive design adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .decorative {
+                font-size: 1.5em;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            img.profile {
+                width: 70%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="decorative top-left">❤️</div>
+    <div class="decorative top-right">🌸</div>
+    <div class="decorative bottom-left">🌀</div>
+    <div class="decorative bottom-right">✨</div>
+
+    <div class="container">
+        <div class="main-content">
+            <img src="photo.jpg" alt="Your Lovely Photo" class="profile">
+            <h1>For My Lovely Girlfriend</h1>
+            <p>Every moment with you is a treasure. Here's to many more special moments together.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
